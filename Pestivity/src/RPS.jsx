@@ -67,7 +67,7 @@ export let Rps = () => {
   return (
   <div className=" w-full h-full grid md:grid-cols-4">
     <div className=" h-full col-span-3 bg-gray-100 grid grid-rows-3 items-center justify-center p-2">
-      <div className=" md:text-5xl text-3xl text-center">Rock Paper Scissors</div>
+      <div className=" md:text-5xl text-blue-500 text-3xl text-center">Rock Paper Scissors</div>
       <div className="flex gap-10 m-auto text-black">
         <p className="btn" onClick={() => {rps('Rock')}}>Rock</p>
         <p className="btn" onClick={() => {rps('Paper')}}>Paper</p>
