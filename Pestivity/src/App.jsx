@@ -31,10 +31,10 @@ function App() {
   return (
     <div>
       <Landing toRps={scrollRps} toTtt={scrollTtt} toHang={scrollHang} toC4={scrollC4}/>
-      <GameRPS />
-      <GameTTT />
-      <GameHang />
-      <GameC4 />
+      <GameRPS scroll={rps}/>
+      <GameTTT scroll={ttt}/>
+      <GameHang scroll={hang}/>
+      <GameC4 scroll={c4}/>
     </div>
   )
 }
