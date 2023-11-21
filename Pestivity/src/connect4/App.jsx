@@ -110,7 +110,7 @@ export const ConnectFour = (props) => {
   };
 
   return (
-    <div className=' w-full h-full overflow-hidden grid md:grid-cols-4'>
+    <div className=' w-full h-full overflow-hidden grid md:grid-cols-4 font-connect4'>
       <div className='  h-full col-span-3 bg-gray-100 grid grid-rows-3 items-center justify-center p-2'>
       <div className="container mx-auto my-8 text-center ">
           <h1 className="text-3xl font-bold mb-4">Connect Four</h1>

@@ -1,5 +1,5 @@
 import { GameR } from "./GameRules"
-import { Rps } from "./RPS"
+import { Rps } from "./rps/RPS"
 export let GameRPS = (props) => {
   let rps_HS = props.rps_hs
   return (

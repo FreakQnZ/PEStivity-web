@@ -90,7 +90,7 @@ export const App = (props) => {
   }
 
   return (
-    <div className="App w-full h-full grid md:grid-cols-4">
+    <div className="App w-full h-full grid md:grid-cols-4 font-tictactoe">
       <div className="  h-full col-span-3 bg-gray-100 grid grid-rows-3 items-center justify-center p-2">
       <ScoreBoard scores={scores} xPlaying={xPlaying} />
       <Board board={board} onClick={gameOver ? resetBoard : handleBoxClick} />

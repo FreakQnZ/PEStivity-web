@@ -17,3 +17,14 @@
   src: url("./assets/fonts/hangman.ttf");
 }
 
+@font-face {
+  font-family: 'tictactoe';
+  src: url("./assets/fonts/tictactoe.ttf");
+}
+
+@font-face {
+  font-family: 'rps';
+  src: url("./assets/fonts/rps.ttf");
+}
+
+
