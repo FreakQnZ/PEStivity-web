@@ -7,12 +7,11 @@ import Axios from "axios";
 
 export let Rps = (props) => {
 
-
   let [state, setState] = useState('Play ball')
   let [wins, setWins] = useState(0);
   let [loses, setLoses] = useState(0)
-
   // const [msg, setMsg] = useState({name : "RPS", score : 0});
+
 
   let submit = async() => {
     let obj = { name : "RPS", score : wins + 1}
@@ -25,10 +24,6 @@ export let Rps = (props) => {
     catch(e) {
       console.log(e)
     }
-  }
-
-  let check = () => {
-    console.log('new hs')
   }
 
   let rps = (user) => {
