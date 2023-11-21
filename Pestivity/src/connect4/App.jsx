@@ -142,7 +142,7 @@ export const ConnectFour = (props) => {
             <p className="text-xl font-bold mb-2">Score:</p>
             <p className="text-lg">{`${INITIAL_STATE.player1}: ${score.player1} | ${INITIAL_STATE.player2}: ${score.player2}`}</p>
             <button
-              className="mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700 focus:outline-none"
+              className="mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700 focus:outline-none btn"
               onClick={resetGame}
             >
               Reset Game
