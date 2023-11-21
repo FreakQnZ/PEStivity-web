@@ -3,13 +3,36 @@ import { GameSc } from "./GameScore";
 import paper from './assets/rps_img/paper.png'
 import scissors from './assets/rps_img/scissors.png'
 import rock from './assets/rps_img/rock.jpg'
+import Axios from "axios";
 
-export let Rps = () => {
+export let Rps = (props) => {
+
+
   let [state, setState] = useState('Play ball')
   let [wins, setWins] = useState(0);
   let [loses, setLoses] = useState(0)
 
+  // const [msg, setMsg] = useState({name : "RPS", score : 0});
+
+  let submit = async() => {
+    let obj = { name : "RPS", score : wins + 1}
+
+    try {
+      await Axios.post('http://localhost:3000/',{
+      obj
+      })
+    }
+    catch(e) {
+      console.log(e)
+    }
+  }
+
+  let check = () => {
+    console.log('new hs')
+  }
+
   let rps = (user) => {
+
     let x = Math.random();
     let computer = 'temp';
     if (x < (1/3)) {
@@ -41,7 +64,10 @@ export let Rps = () => {
 
         else if (computer === 'Scissors') {
           setState('Computer Choses Scissors you win');
-          setWins(wins + 1);
+          setWins((prevWins)=>prevWins+1);
+          if (props.rps_hs <= wins) {
+            submit()
+          }
         }
       }
 
@@ -54,6 +80,9 @@ export let Rps = () => {
         else if (computer === 'Rock') {
           setState('Computer Choses Rock you win');
           setWins(wins + 1);
+          if (props.rps_hs <= wins) {
+            submit()
+          }
         }
       }
 
@@ -66,9 +95,15 @@ export let Rps = () => {
         else if (computer === 'Paper') {
           setState('Computer Choses Paper you win');
           setWins(wins + 1);
+
+          if (props.rps_hs <= wins) {
+            submit()
+          }
         }
       }
     }
+
+
       
   }
 

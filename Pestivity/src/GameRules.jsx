@@ -7,7 +7,7 @@ export let GameR = (props) => {
       <div className=' h-[95%] flex flex-col items-center p-4 md:gap-8 gap-2'>
       <img src={logo} alt="logo" className='hidden md:block'/>
       <p className=' md:text-6xl text-2xl'>Rules</p>
-      <p className='md:text-xl overflow-scroll'>{props.rules}</p>
+      <p className='md:text-xl'>{props.rules}</p>
       </div>
       <div className='hidden md:block'>
         <a href="https://github.com/FreakQnZ/PEStivity-web" target='_blank' className='flex gap-4 items-center hover:text-white'>
