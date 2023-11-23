@@ -2,18 +2,17 @@ const  MongoClient  = require('mongodb').MongoClient;
 const express = require('express');
 const app = express();
 const cors = require('cors')
-// or as an es module:
-// import { MongoClient } from 'mongodb'
 
-// Connection URL
+
+
 const url = 'mongodb://127.0.0.1:27017/';
 const client = new MongoClient(url);
 
-// Database Name
+
 const dbName = 'myProject';
 
 async function main() {
-  // Use connect method to connect to the server
+
   await client.connect();
   console.log('Connected successfully to server');
   let db = client.db(dbName);

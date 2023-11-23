@@ -34,26 +34,12 @@ export let Header_landing = (props) => {
 
       <div className=' md:space-y-4 flex  md:flex-col justify-center items-center space-x-3 md:space-x-0'>
 
-        {/* <button className="btn w-40 bg-zinc-700 hover:bg-zinc-100 hover:text-black" onClick={()=>document.getElementById('my_modal_1').showModal()}>my account</button>
-        <dialog id="my_modal_1" className="modal">
-          <div className="modal-box">
-            <h3 className="font-bold text-lg">modal 1</h3>
-            <p className="py-4">Press ESC key or click the button below to close</p>
-            <div className="modal-action">
-              <form method="dialog">
-                <button className="btn">Close</button>
-              </form>
-            </div>
-          </div>
-        </dialog> */}
-
         <button className="btn w-40 bg-zinc-700 hover:bg-zinc-100 hover:text-black" onClick={()=>document.getElementById('my_modal_2').showModal()}>LeaderBoard</button>
         <dialog id="my_modal_2" className="modal">
           <div className="modal-box flex flex-col items-center">
             <h3 className=' text-4xl font-semibold pb-8'>High Scores</h3>
             <p className=' text-2xl'>Rock Paper Scissors : {props.rps_hs}</p>
             <p className=' text-2xl'>Tic Tac Toe : {props.ttt_hs}</p>
-            <p className=' text-2xl'>Hangman : {props.hang_hs}</p>
             <p className=' text-2xl'>Connect 4 : {props.c4_hs}</p>
             <div className="modal-action">
               <form method="dialog">
