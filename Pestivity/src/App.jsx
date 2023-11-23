@@ -24,7 +24,7 @@ function App() {
   }
   useEffect(() => {
     getData();
-  }, []);
+  }, [data]);
 
   useEffect(() => {
     // Check if data is defined and has the expected structure
