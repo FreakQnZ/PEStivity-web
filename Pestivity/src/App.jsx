@@ -27,7 +27,6 @@ function App() {
   }, [data]);
 
   useEffect(() => {
-    // Check if data is defined and has the expected structure
     if (data && data.length === 3) {
       setRps_hs(data[0].highScore);
       setTtt_hs(data[1].highScore);
