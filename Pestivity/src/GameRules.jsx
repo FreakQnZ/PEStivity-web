@@ -12,7 +12,7 @@ export let GameR = (props) => {
       <div className='hidden md:block'>
         <a href="https://github.com/FreakQnZ/PEStivity-web" target='_blank' className='flex gap-4 items-center hover:text-white'>
           <img src={git} width={30} alt="" />
-          <p className='text-lg'>Visit the Repo</p>
+          <p className='text-lg'>Visit The Repository</p>
         </a>
       </div>
     </div>
